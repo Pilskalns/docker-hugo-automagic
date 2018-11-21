@@ -10,7 +10,8 @@ ENV HUGO_BINARY hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
 
 RUN apt-get -qq update \
 	# && DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git ca-certificates asciidoc curl \
-	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends \
+	&& DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends python-pygments git ca-certificates curl \
+	# && DEBIAN_FRONTEND=noninteractive apt-get -qq install -y --no-install-recommends \
     git \
     ssh-client \
     ca-certificates curl \
